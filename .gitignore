@@ -1,2 +1,6 @@
 .terraform
 .terraform.lock.hcl
+aws_keys_pairs.pem
+.terraform.tfstate.lock.info
+terraform.tfstate
+terraform.tfstate.backup
