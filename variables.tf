@@ -24,6 +24,10 @@ variable "subnets" {
   type = list(any)
 }
 
+variable "subnets-az" {
+  type = list(any)
+}
+
 variable "web-traffic" {
   description = "allow all"
 }
