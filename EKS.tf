@@ -87,7 +87,7 @@ resource "aws_eks_node_group" "worker-node-group" {
   node_group_name = "omar-workernodes"
   node_role_arn   = aws_iam_role.workernodes.arn
   subnet_ids      = [aws_subnet.subnets[2].id, aws_subnet.subnets[3].id]
-  instance_types  = ["t2.micro"]
+  instance_types  = ["t2.medium"]
 
   scaling_config {
     desired_size = 1
